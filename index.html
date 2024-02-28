@@ -1,26 +1,139 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <title>kirar00t</title>
-    
-</head>
-<body>
-    <!-- Imie, ten efekt pisania -->
-    <div>
-        
-    </div>
-    
-    <!-- Po lewej "about me" a po prawej > Języki/Technologie których używam-->
-    <div>
-        
-    </div>
-    
-    <!-- Github, Kontakt do mnie -->
-    <div>
+	<head>
+		<title>Welcome !</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-    </div>
-</body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="content">
+							<div class="inner">
+								<h1>KiraR00t</h1>
+								<p>I'm a young, self-taught programmer</p>
+								<!--- Text Animation -->
+								<p>I code in <b><span id="element"></span></b></p>
+								<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+								<script>
+									var typed = new Typed('#element', {
+									strings: ['Python', 'Django', 'C++', 'PHP', 'SQL', 'HTML', 'CSS', 'JavaScript'],
+									typeSpeed: 175,
+									backSpeed: 100,
+									loop: true,
+									});
+								</script>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#aboutme">About me</a></li>
+								<li><a href="#skills">My skills</a></li>
+								<li><a href="https://github.com/Kir4R00t">My Github</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About me -->
+							<article id="aboutme">
+								<h2 class="major">About me</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<p>My name is <b>Przemysław</b>. I am <b>20 years old</b> and I am <b>from Poland.</b></p>
+								<p>
+									<b>My Coding journey</b><br>                                                              
+									I started my coding journey when I was about 14 years old and first language that I have 
+									picked was <b>C++</b>. After learning basics I got interested in web development so I started
+									learing <b>HTML, CSS & Javascript,</b> but I realised that I don't really enjoy front-end dev
+									so I went for <b>PHP, SQL</b>. I made a few small projects, learned about working with databases
+									and back-end development in general. After that I started learning <b>Python</b> in highschool
+									for Matura exam and I fell in love with it. I particularly like the simplicity of coding
+									in Python. It allows me to create pretty complex applications with ease. Then I learned
+									that I can work with backend using Python and I started experimenting with a very popular
+									framework <b>Django</b>.
+								</p>
+
+								<!-- My hobbies -->
+								
+							</article>
+
+						<!-- My skills -->
+							<article id="skills">
+								<h2 class="major">My skills</h2>
+								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<p>
+									<h2>Langauges</h2>
+									<b>Python</b> - Intermediate<br>
+									<b>Django</b> - Intermediate<br>
+									<b>PHP</b> - Beginner/Intermediate<br>
+									<b>SQL</b> - Beginner/Intermediate<br>
+									<b>C++</b> - Beginner<br>
+									<b>HTML/CSS/JS</b> - Beginner<br>
+									
+									<br>
+									<h2>Tools & Technologies</h2>
+									<b>Git/Github</b> - Intermediate<br>
+									<b>Linux</b> - Intermediate<br>
+									<b>Docker</b> - Intermediate<br>
+								</p>
+
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								
+							</article>
+
+						
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">I like fresh bread</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
