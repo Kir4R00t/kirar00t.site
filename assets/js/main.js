@@ -25,7 +25,6 @@
 			}, 100);
 		});
 
-	// Fix: Flexbox min-height bug on IE.
 		if (browser.name == 'ie') {
 
 			var flexboxFixTimeoutId;
@@ -50,8 +49,6 @@
 	// Nav.
 		var $nav = $header.children('nav'),
 			$nav_li = $nav.find('li');
-
-		// Add "middle" alignment classes if we're dealing with an even number of items.
 			if ($nav_li.length % 2 == 0) {
 
 				$nav.addClass('use-middle');
@@ -108,13 +105,10 @@
 							return;
 
 						}
-
-					// Lock.
 						locked = true;
 
 				// Article already visible? Just swap articles.
 					if ($body.hasClass('is-article-visible')) {
-
 						// Deactivate current article.
 							var $currentArticle = $main_articles.filter('.active');
 

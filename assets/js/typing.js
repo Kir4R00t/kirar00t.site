@@ -1,3 +1,4 @@
+// Very cool typing animation
 var typed = new Typed('#element', {
     strings: ['Python', 'Django', 'C++', 'PHP', 'SQL', 'HTML', 'CSS', 'JavaScript'],
     typeSpeed: 175,
