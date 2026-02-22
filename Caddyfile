@@ -1,0 +1,5 @@
+kirahosting.fun, www.kirahosting.fun {
+    encode gzip zstd
+    root * /site
+    file_server
+}
