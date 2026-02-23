@@ -274,6 +274,7 @@ input, select, textarea {
 		justify-content: space-between;
 		position: relative;
 		min-height: 100vh;
+		height: auto;
 		width: 100%;
 		padding: 4rem 2rem;
 		z-index: 3;
@@ -457,8 +458,10 @@ input, select, textarea {
 		#header {
 			padding: 1.5rem 0;
 		}
+			@media screen and (max-width: 480px) {
 			#header .content .inner {
-				padding: 20rem 0;
+					padding: 2rem 1rem;
+				}
 			}
 			#header nav ul {
 				-moz-flex-direction: column;
