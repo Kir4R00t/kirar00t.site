@@ -1,16 +1,14 @@
 services:
-  caddy:
-    image: caddy:alpine
-    ports:
-      - "80:80"
-      - "443:443"
+  website:
+    image: nginx:alpine
+    container_name: kirar00t-site
     volumes:
-      - ./:/site
-      - ./Caddyfile:/etc/caddy/Caddyfile
-      - caddy_data:/data
-      - caddy_config:/config
+      - ./:/usr/share/nginx/html:ro
     restart: unless-stopped
+    networks:
+      - default
 
-volumes:
-  caddy_data:
-  caddy_config:
+networks:
+  default:
+    name: nginx_proxy
+    external: true
