@@ -1,188 +1,308 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kir4R00t — Przemek Sadowski</title>
+  <link rel="icon" type="image/x-icon" href="images/dev_logo.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
 
-		<title>| KiraR00t.site |</title>
-		<link rel="icon" type="image/x-icon" href="images/dev_logo.ico">
-	</head>
-	<body class="is-preload">
+<div class="grid-bg"></div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- NAV -->
+<nav>
+  <div class="inner">
+    <a class="nav-logo" href="#">Kir4R00t<span>.fun</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#selfhosting">Self-hosting</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="content">
-							<div class="inner">
-								<h1>Hi, I'm Przemek</h1>
-								<p>Highly motivated, self-taught programmer</p>
-								
-								<!--- Text Animation -->
-								<p>I work with <b><span id="element"></span></b></p>
-								<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-								<script src="assets/js/typing.js"></script>
-							</div>
-						</div>
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-pre fade-in">Software Engineer</div>
+    <h1 class="hero-name fade-in delay-1">Przemysław<br>Sadowski</h1>
+    <div class="hero-alias fade-in delay-2"><span class="at">@</span><span id="typed-alias"></span></div>
+    <p class="hero-desc fade-in delay-3">
+      Self-taught programmer turned professional back-end developer. Building reliable systems at <strong style="color:var(--white)">OBR CTM</strong> since 2024 — developing practical solutions and running my own homelab after hours.
+    </p>
+    <div class="hero-cta fade-in delay-4">
+      <a class="btn btn-primary" href="#selfhosting">Self-Hosting Portfolio</a>
+      <a class="btn btn-primary" href="#projects">View Projects</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span class="scroll-line"></span>scroll to explore
+    </div>
+  </div>
+</section>
 
-						<nav>
-							<ul>
-								<li><a href="#aboutme">About me</a></li>
-								<li><a href="#skills">My skills</a></li>
-								<li><a href="https://github.com/Kir4R00t" target="_blank">My Github</a></li>
-								<li><a href="https://www.linkedin.com/in/przemys%C5%82aw-sadowski-39266b297/" target="_blank">Linkedin</a></li>
-							</ul>
-						</nav>
-					</header>
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-label">01 — about me</div>
+    <h2 class="section-title">Few words about me.</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>My programming journey started at 14 when I discovered <strong>C++</strong>. After learning the basics, I explored basic web development with <strong>HTML & CSS</strong> — before quickly realising front-end wasn't for me.</p>
+        <p>I then dove into back-end development: <strong>PHP</strong>, <strong>SQL</strong>, and small database-heavy projects. High school introduced me to <strong>Python</strong> (immediately hooked), and eventually to back-end development with <strong>Django</strong>.</p>
+        <p>Learning <strong>Java</strong> landed me my first internship at <strong>OBR CTM</strong>. I've been there as a back-end developer since July 2024 — <strong>working primarily with Python</strong> and a bunch of other technologies every day.</p>
+        <p>Outside of code: I run a homelab, pet my cat, and spend a lot of time at the shooting range with my gf.</p>
+      </div>
+      <div class="about-facts">
+        <div class="fact-card">
+          <div class="fact-icon">🏢</div>
+          <div>
+            <div class="fact-title">OBR CTM — Back-end Developer</div>
+            <div class="fact-sub">July 2024 → present · Gdynia, Poland</div>
+          </div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">🐍</div>
+          <div>
+            <div class="fact-title">Primary Language: Python</div>
+            <div class="fact-sub">+ Java, Spring Boot, SQL, Docker</div>
+          </div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">🖥️</div>
+          <div>
+            <div class="fact-title">Self-hosted homelab</div>
+            <div class="fact-sub">Linux · Docker · Nginx and more</div>
+          </div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">🔫</div>
+          <div>
+            <div class="fact-title">Frequent visitor at the shooting range</div>
+            <div class="fact-sub">Also a gym enjoyer</div>
+          </div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-icon">🍞</div>
+          <div>
+            <div class="fact-title">Fun fact</div>
+            <div class="fact-sub">I like fresh bread</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-					<!-- Main -->
-					
-					<div id="main">
-						
-						<!-- About me -->
-							
-						<article id="aboutme">
-								<h2 class="major">About me</h2>
-								<h2>My Coding Journey</h2>
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-label">02 — skills</div>
+    <h2 class="section-title">What I work with.</h2>
+    <div class="skills-groups">
+      <div class="skill-group">
+        <div class="skill-group-title">// Core Stack</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">Qt QML</span>
+          <span class="skill-tag">JSON · GeoJSON</span>
+          <span class="skill-tag">PostgreSQL</span>
 
-								<p>My programming journey started at 14 when I discovered <b>C++</b>. After learning the basics, I explored web development with <b>HTML, CSS, and JavaScript</b>, but quickly realized front-end development wasn’t for me.
-								</p>
-								
-								<p>I then focused on back-end development, learning <b>PHP</b> and <b>SQL</b> while building small projects and working with databases and server-side logic.
-								</p>
-								
-								<p>In high school I began learning <b>Python</b> while preparing for my Matura exams and immediately enjoyed its simplicity and versatility. That eventually led me to back-end development using the <b>Django</b> framework.
-								</p>
-								
-								<p>Later I learned <b>Java</b>, which helped me land my first internship at <b>OBR CTM</b>. Today I work there as a back-end developer, mainly using <b>Python</b> along with various other technologies.
-								</p>
-							</article>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">// Infrastructure</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Apache NiFi</span>
+          <span class="skill-tag">Apache Kafka</span>
+          <span class="skill-tag">OpenSearch</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">// Also Familiar</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Java (Spring Boot)</span>
+          <span class="skill-tag">Selenium</span>
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">Odoo</span>
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">HTML/CSS/JS</span>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-						<!-- My skills -->
+<!-- SELF-HOSTING -->
+<section id="selfhosting">
+  <div class="container">
+    <div class="section-label">03 — homelab</div>
+    <h2 class="section-title">Self-hosting portfolio.</h2>
+    <p class="sh-intro">
+      I run my own infrastructure at home — reverse proxies, note-taking apps, recipe managers, and Discord bots, all containerised and managed through Docker. Here's a snapshot of what's running.
+    </p>
 
-						<article id="skills">
-							<h1 class="major">Skills</h1>
+    <div class="sh-grid">
+      <div class="sh-card">
+        <div class="sh-card-icon">🔀</div>
+        <div>
+          <div class="sh-card-name">Nginx Proxy Manager</div>
+          <div class="sh-card-desc">Reverse proxy & SSL termination</div>
+          <span class="sh-tag">Infrastructure</span>
+        </div>
+      </div>
+      <div class="sh-card">
+        <div class="sh-card-icon">🐳</div>
+        <div>
+          <div class="sh-card-name">Portainer</div>
+          <div class="sh-card-desc">Docker container management UI</div>
+          <span class="sh-tag">Infrastructure</span>
+        </div>
+      </div>
+      <div class="sh-card">
+        <div class="sh-card-icon">📝</div>
+        <div>
+          <div class="sh-card-name">Docmost</div>
+          <div class="sh-card-desc">Self-hosted notes & documentation</div>
+          <span class="sh-tag">Productivity</span>
+        </div>
+      </div>
+      <div class="sh-card">
+        <div class="sh-card-icon">🍽</div>
+        <div>
+          <div class="sh-card-name">Mealie</div>
+          <div class="sh-card-desc">Recipe management app</div>
+          <span class="sh-tag">Productivity</span>
+        </div>
+      </div>
+      <div class="sh-card">
+        <div class="sh-card-icon">🤖</div>
+        <div>
+          <div class="sh-card-name">FarmerBot</div>
+          <div class="sh-card-desc">Official xfarmerx Discord bot</div>
+          <span class="sh-tag">Discord Bots</span>
+        </div>
+      </div>
+      <div class="sh-card">
+        <div class="sh-card-icon">📅</div>
+        <div>
+          <div class="sh-card-name">Calendar Scraper</div>
+          <div class="sh-card-desc">Publishes shared Outlook calendar</div>
+          <span class="sh-tag">Utilities</span>
+        </div>
+      </div>
+    </div>
 
-							<h2>Core Stack</h2>
-							<p>Technologies I use the most in my daily work.</p>
+    <a class="sh-portfolio-btn" href="https://homepage.kirahosting.fun" target="_blank" rel="noopener">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+      Open Full Homelab Dashboard →
+    </a>
+  </div>
+</section>
 
-							<a href="https://www.python.org" target="_blank" rel="noreferrer">
-								<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="90" height="90"/>
-							</a>
-							
-							<a href="https://www.json.org/json-en.html" target="_blank" rel="noreferrer">
-								<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/json/json-original.svg" alt="json" width="90" height="90"/>
-							</a>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-label">04 — projects</div>
+    <h2 class="section-title">Selected work.</h2>
+    <div class="projects-grid">
+      <a class="project-card" href="https://github.com/Kir4R00t/FarmerBot" target="_blank" rel="noopener">
+        <div class="project-lang">Python · DiscordAPI</div>
+        <div class="project-name">FarmerBot</div>
+        <div class="project-desc">Official Discord bot for xfarmerx. Fully containerised and running 24/7 on my homelab.</div>
+        <div class="project-arrow">view on GitHub →</div>
+      </a>
+      <a class="project-card" href="https://github.com/Kir4R00t/OutlookCalendarScraper" target="_blank" rel="noopener">
+        <div class="project-lang">Python · Selenium</div>
+        <div class="project-name">OutlookCalendarScraper</div>
+        <div class="project-desc">Scrapes an Outlook calendar using Selenium and publishes a shared `.ics` file automatically.</div>
+        <div class="project-arrow">view on GitHub →</div>
+      </a>
+      <a class="project-card" href="https://github.com/Kir4R00t/kirar00t.site" target="_blank" rel="noopener">
+        <div class="project-lang">CSS · HTML</div>
+        <div class="project-name">kirar00t.site</div>
+        <div class="project-desc">My personal portfolio website — You are browsing it now :]</div>
+        <div class="project-arrow">view on GitHub →</div>
+      </a>
+      <a class="project-card" href="https://github.com/Kir4R00t?tab=repositories" target="_blank" rel="noopener">
+        <div class="project-lang">GitHub · 25 repos</div>
+        <div class="project-name">More on GitHub</div>
+        <div class="project-desc">Browse all 25 public repositories — automation scripts, bots, back-end experiments and more.</div>
+        <div class="project-arrow">see all repos →</div>
+      </a>
+    </div>
+  </div>
+</section>
 
-							<a href="https://www.java.com" target="_blank" rel="noreferrer">
-								<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="90" height="90"/>
-							</a>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="section-label" style="justify-content:center">05 — contact</div>
+      <h2 class="section-title" style="text-align:center">Let's connect.</h2>
+      <p>I'm always open to interesting conversations, collaboration, or just talking tech. Find me on any of the platforms below.</p>
+      <div class="social-links">
+        <a class="social-link" href="https://github.com/Kir4R00t" target="_blank" rel="noopener">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.57.1.78-.25.78-.55v-1.93c-3.2.69-3.87-1.54-3.87-1.54-.52-1.33-1.27-1.68-1.27-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.72-1.53-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 012.87-.39c.97 0 1.95.13 2.87.39 2.18-1.49 3.14-1.18 3.14-1.18.63 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.68 5.38-5.24 5.67.41.35.78 1.05.78 2.12v3.14c0 .3.2.66.79.55A11.51 11.51 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+          GitHub
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/in/przemys%C5%82aw-sadowski-39266b297/" target="_blank" rel="noopener">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM3.56 20.45h3.56V9H3.56v11.45zM22.22 0H1.78C.8 0 0 .78 0 1.74v20.52C0 23.2.8 24 1.78 24h20.44c.98 0 1.78-.8 1.78-1.74V1.74C24 .78 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-							<a href="https://spring.io/projects/spring-boot" target="_blank" rel="noreferrer">
-								<img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring boot" width="90" height="90"/>
-							</a>
+<footer>
+  <div class="container">
+    built by <a href="https://github.com/Kir4R00t">@Kir4R00t</a> · <a href="https://kirahosting.fun">kirahosting.fun</a> · talk is cheap, show me the code. ~ L. Torvalds
+  </div>
+</footer>
 
-							<a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
-								<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="90" height="90"/>
-							</a>
+<script>
+  // Typing animation for alias
+  const alias = 'Kir4R00t';
+  const el = document.getElementById('typed-alias');
+  let i = 0;
+  function type() {
+    if (i <= alias.length) {
+      el.innerHTML = alias.slice(0, i) + '<span class="typed"></span>';
+      i++;
+      setTimeout(type, 100);
+    }
+  }
+  setTimeout(type, 600);
 
-							<a href="https://www.docker.com/" target="_blank" rel="noreferrer">
-								<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="90" height="90"/>
-							</a>
+  // Intersection observer for scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
 
-							<br><br>
-
-							<h2>Tools & Platforms</h2>
-
-							<a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-								<img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="90" height="90"/>
-							</a>
-
-							<a href="https://www.linux.org/" target="_blank" rel="noreferrer">
-								<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="90" height="90"/>
-							</a>
-
-							<a href="https://kubernetes.io/" target="_blank" rel="noreferrer">
-								<img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="90" height="90"/>
-							</a>
-
-							<a href="https://nifi.apache.org/" target="_blank" rel="noreferrer">
-								<img src="https://www.vectorlogo.zone/logos/apache_nifi/apache_nifi-icon.svg" alt="apache nifi" width="90" height="90"/>
-							</a>
-
-							<a href="https://kafka.apache.org/" target="_blank" rel="noreferrer">
-								<img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg" alt="apache kafka" width="90" height="90"/>
-							</a>
-
-							<br><br>
-
-							<h2>Additional Experience</h2>
-
-							<a href="https://www.selenium.dev" target="_blank" rel="noreferrer">
-								<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/selenium/selenium-original.svg" alt="selenium" width="90" height="90"/>
-							</a>
-
-							<a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer">
-								<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg" alt="flask" width="90" height="90"/>
-							</a>
-
-							<a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer">
-								<img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="90" height="90"/>
-							</a>
-
-							<a href="https://www.php.net" target="_blank" rel="noreferrer">
-								<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="90" height="90"/>
-							</a>
-
-							<a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
-								<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="90" height="90"/>
-							</a>
-
-							<a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-								<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="90" height="90"/>
-							</a>
-
-							<a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-								<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="90" height="90"/>
-							</a>
-
-							<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-								<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="90" height="90"/>
-							</a>
-
-							<a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer">
-								<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="90" height="90"/>
-							</a>
-
-							<br><br>
-
-							<h3><i>Summary</i></h3>
-							<p>
-								<strong>Main focus:</strong> Python, Selenium, Java, Spring Boot <br>
-								<strong>Infrastructure:</strong> Linux, Docker, Git, Kubernetes <br>
-								<strong>Data & Streaming:</strong> Apache NiFi, Apache Kafka, OpenSearch <br>
-								<strong>Other experience:</strong> Qt.QML, Odoo, Postgres, Django, SQL, C++, HTML/CSS/JS, Odoo
-							</p>
-						</article>
-					</div>
-
-				<!-- Footer -->
-				<footer id="footer">
-					<p class="copyright">I like fresh bread</p>
-				</footer>
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
+  document.querySelectorAll('.skill-group, .sh-card, .project-card, .fact-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(24px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease, border-color 0.2s';
+    observer.observe(el);
+  });
+</script>
+</body>
 </html>
